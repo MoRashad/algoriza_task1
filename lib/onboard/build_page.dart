@@ -37,9 +37,10 @@ class BuildPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 25),
+            padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Text(
               subTitle,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                 color: Colors.grey,
               ),
