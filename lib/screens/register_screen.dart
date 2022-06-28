@@ -1,3 +1,4 @@
+import 'package:algoriza_task1/screens/login_screen.dart';
 import 'package:algoriza_task1/widgets/botton_widget.dart';
 import 'package:algoriza_task1/widgets/outlined_button.dart';
 import 'package:algoriza_task1/widgets/phone_field_widget.dart';
@@ -163,7 +164,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         letterSpacing: 1.5,
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (builder) => const LoginScreen()));
+                        },
                         child: const Text(
                           'Sign In here',
                           style: TextStyle(
