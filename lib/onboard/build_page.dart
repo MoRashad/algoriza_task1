@@ -31,7 +31,7 @@ class BuildPage extends StatelessWidget {
             textAlign: TextAlign.center,
             style: const TextStyle(
               color: Colors.black,
-              fontSize: 27,
+              fontSize: 25,
               fontWeight: FontWeight.bold,
             ),
           ),

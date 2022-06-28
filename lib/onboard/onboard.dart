@@ -1,4 +1,8 @@
 import 'package:algoriza_task1/onboard/build_page.dart';
+import 'package:algoriza_task1/screens/login_screen.dart';
+import 'package:algoriza_task1/screens/register_screen.dart';
+import 'package:algoriza_task1/widgets/botton_widget.dart';
+import 'package:algoriza_task1/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -81,7 +85,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         height: MediaQuery.of(context).size.height * 0.20, //140,
         child: Column(
           children: [
-            const SizedBox(height: 5),
+            const SizedBox(height: 15),
             SmoothPageIndicator(
               controller: controller,
               count: 3,
@@ -92,38 +96,33 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 dotHeight: 5,
               ),
             ),
-            const SizedBox(height: 20),
-            InkWell(
-              onTap: () {},
-              child: Container(
-                width: double.infinity,
-                height: 50,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.blue),
-                child: const Text(
-                  'Get Started',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
+            const SizedBox(height: 25),
+            BottonWidget(
+              title: 'Get Started',
+              color: Colors.teal,
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (builder) => const LoginScreen()));
+              },
             ),
             const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  'Don\'t have an account?',
-                  style: TextStyle(fontSize: 15, letterSpacing: 1.1),
+                TextWidget(
+                  text: 'Don\'t have an account?',
+                  color: Colors.black,
+                  textsize: 15,
+                  letterSpacing: 1.7,
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (builder) => const RegisterScreen()));
+                  },
                   child: const Text(
                     'Sign Up',
-                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 ),
               ],
