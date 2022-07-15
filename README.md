@@ -2,11 +2,12 @@
 
 A new Flutter project.
 
-
-<img src="https://user-images.githubusercontent.com/44236713/176244378-a0ec7828-770a-495c-b1b1-985f5d72abdb.png" width="250">
-<img src="https://user-images.githubusercontent.com/44236713/176244366-7163fa24-e950-4aac-b5bb-39e5ae78b37a.png" width="250">
-<img src="https://user-images.githubusercontent.com/44236713/176244372-cfa9cc0a-5ae7-4ea5-b7ca-2ed6e91abaa0.png" width="250">
-<img src="https://user-images.githubusercontent.com/44236713/176244364-c8448479-f0ac-4f3f-896b-b89d232a5946.png" width="250">
+<p float="left">
+<img src="https://user-images.githubusercontent.com/44236713/176244378-a0ec7828-770a-495c-b1b1-985f5d72abdb.png" width="200">
+<img src="https://user-images.githubusercontent.com/44236713/176244366-7163fa24-e950-4aac-b5bb-39e5ae78b37a.png" width="200">
+<img src="https://user-images.githubusercontent.com/44236713/176244372-cfa9cc0a-5ae7-4ea5-b7ca-2ed6e91abaa0.png" width="200">
+<img src="https://user-images.githubusercontent.com/44236713/176244364-c8448479-f0ac-4f3f-896b-b89d232a5946.png" width="200">
+</p>
 
 ## Getting Started
 
